@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home | Portfolio template</title>
+  <meta name="description" content="Page-specific description">
+  <meta name="keywords" content="Page-specific keywords">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic"
+    rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/screen.min.css">
+  <link rel="stylesheet" href="static/css/custom.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="static/js/head.min.js"></script>
+</head>
+
+<body>
+  <script>
+    progressJs().setOptions({
+      overlayMode: true,
+      theme: 'custom'
+    }).start();
+    if (window.attachEvent) {
+      window.attachEvent('onload', function () {
+        progressJs().end();
+      });
+    } else {
+      if (window.onload) {
+        var curronload = window.onload;
+        var newonload = function () {
+          curronload();
+          progressJs().end();
+        };
+        window.onload = newonload;
+      } else {
+        window.onload = function () {
+          progressJs().end();
+        };
+      }
+    }
+  </script><!-- Header-->
+  <header class="main-header">
+    <div class="first-nav">
+      <div class="container">
+        <nav class="first-nav__links">
+          <ul>
+            <li><a class="is-selected">Galeri</a></li>
+
+          </ul>
+        </nav><a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+      </div>
+    </div>
+    <div class="second-nav js-nav">
+      <div class="container"><a class="second-nav__logo"><span>JD</span></a>
+        <nav class="menu">
+          <ul>
+            <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+            <li><a class="js-link js-anchor" href="#about">Hakkımda</a></li>
+            <li><a class="js-link js-anchor" href="#services">Faliyetlerim</a></li>
+            <li><a class="js-link js-anchor" href="#projects">Görseller</a></li>
+            <li><a class="js-link js-anchor" href="#contacts">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header><!-- Home section-->
+  <section class="home-section" id="home">
+    <div class="home-section__bg"></div>
+    <div class="home-section__overlay">
+      <div class="container">
+        <header class="home-section__header">
+          <h1>Bülent Cesur</h1>
+          <h2>Elektrik Elektronik Mühendisi</h2>
+        </header>
+      </div>
+    </div>
+  </section><!-- About section-->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-card">
+        <header class="about-card__header">
+          <h2>Hakkımda</h2>
+        </header>
+        <div class="about-card__info">
+            <p>- 20 yıla aşkın savunma sanayi sektöründe  bakım onarım faliyetlerinde bulundum</p>
+            <p>- Fabrika otomasyonu konularında çalıştım</p>
+            <p>- Fabrika Elektrik Projelerinin hazırlanması ve kontrolünde bulundum</p>
+            
+          <li class="about-card__info-status"><span>Çalışma Durumum:</span> Müsait</li>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- Services section-->
+  <section class="common-section" id="services">
+    <div class="container">
+      <header class="common-section__header">
+        <h2>Faliyetlerim</h2>
+      </header>
+      <div class="grid-container">
+        <ul class="services services_advisory">
+          <li class="services__item icon icon_strategy">
+            <h4>Küçük ve orta düzey tezgah ve tesislerin otomasyon ile ilgili arızalarının giderilmesi</h4>
+            <p>- Sistemde otomasyon var ise PLC ile haberleşerek sisteme bağlanma</p>
+            <p>-  Siemes Tia Portal kullanmak</p>
+            <p>- Siemens s7-1200 ve s7-1500 PLC sistemlerinde FBD,LD ve ST programlama dillerini kullanmak</p>
+
+          </li>
+          <li class="services__item icon icon_strategy">
+            <h4>Elektrik, Hidrolik, Pnomatik kumanda şemalarını okuyup arıza tespiti yapmak</h4>
+            <p>- Asenkron motor ve sürücülerde arıza tespiti</p>
+            <p>- Arızalı sensor veya aktüatör ün tespiti ve ilgili katalog araştırması</p>
+          </li>
+
+        </ul>
+        <ul class="services services_pm">
+
+            <li class="services__item icon icon_strategy">
+                <h4>Küçük ölçekli modernizasyonlar</h4>
+            <p>- Tezgah veya tesisin akış diyagramını çıkarmak</p>
+            <p>- Gerekli olan otomasyon elemanlarını belirlemek</p>
+            <p>- Projenin Elektrik şemasını oluşturmak</p>
+            <p>- Eski panoların veya yeni panoların elektrik şemasına göre bağlantısının yapılması</p>
+            <p>- Sistemin nihai elektriksel bağlantılarını yapmak</p>
+            <p>- Sistem için gerekli otomasyon ve scada yazılımını yapmak</p>
+              </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </section>
+ <!-- Projects section-->
+  <section class="common-section" id="projects">
+    <header class="common-section__header">
+      <h2>Faliyetlerim ile ilgili görseller</h2>
+      <p>-------------------------</p>
+    </header>
+    <div class="projects-wrap">
+      <div class="grid-container">
+        <div class="projects">
+          <figure class="projects__item"><img src="static/images/projects/1.jpg"
+              alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit</a></figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/2.jpg"
+              alt="Donec lobortis, est iaculis rutrum feugiat">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Donec lobortis, est iaculis rutrum feugiat</a>
+            </figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/5.jpg"
+              alt="Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Duis feugiat, metus eu ullamcorper accumsan,
+                massa risus dictum nisi</a></figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/6.jpg"
+              alt="Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Donec non ligula imperdiet, tincidunt quam ut,
+                pellentesque nisi</a></figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/3.jpg"
+              alt="Mauris a sem semper, maximus metus vitae, efficitur turpis">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Mauris a sem semper, maximus metus vitae,
+                efficitur turpis</a></figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/4.jpg"
+              alt="Nunc sit amet massa id sem pretium luctus">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Nunc sit amet massa id sem pretium luctus</a>
+            </figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/7.jpg"
+              alt="Nunc elementum arcu sit amet erat sodales fringilla">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Nunc elementum arcu sit amet erat sodales
+                fringilla</a></figcaption>
+          </figure>
+          <figure class="projects__item"><img src="static/images/projects/8.jpg"
+              alt="Cras condimentum venenatis aliquet">
+            <figcaption><a class="icon icon_link" href="#" rel="nofollow">Cras condimentum venenatis aliquet</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  <div class="contacts-section" id="contacts">
+    <div class="container">
+      <section class="contact-card">
+        <header class="contact-card__header">
+          <h2>İletişim Bilgilerim</h2>
+        </header>
+        <div class="contact-info">
+          <div class="contact-info__logo">BC</div>
+          <div class="contact-info__group">
+            <div class="contact-info__additional">
+ 
+            </div>
+            <div class="contact-info__vcard vcard">
+              <h4 class="fn org">Bülent CESUR</h4>
+              <p class="role title">Elektrik ve Elektronik Mühendisi</p>
+              <p class="icon icon_location"><a class="adr js-anchor" href="#gmap"><span
+                    class="country-name">Türkiye</span>,&nbsp;<span class="locality">Ankara</span></a></p>
+              <p class="icon icon_mail"><a class="email" href="mesleki2017@gmail.com">mesleki2017@gmail.com</a></p>
+              <p class="fa fa-github"><a class="email" href="https://github.com/mesleki2017">https://github.com/mesleki2017</a></p>
+            </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=ankara&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="gmap" id="gmap"></div>
+  </div><!-- Footer-->
+  <footer class="main-footer">
+    <div class="container">
+      <p class="main-footer__copyright">&copy;&nbsp;<span>Bülent CESUR</span></p><a
+        class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+    </div>
+  </footer>
+  <script src="static/js/body.min.js"></script>
+</body>
+
+</html>
